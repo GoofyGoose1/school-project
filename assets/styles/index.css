@@ -586,8 +586,8 @@ audio {
 }
 
 .flip-card {
-    width:  450px;
-    height: 500px;
+    width:  400px;
+    height: 400px;
     perspective: 1000px;
     padding: 50px;
     overflow: visible;
