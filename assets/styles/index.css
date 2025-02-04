@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     min-height: 100vh;
-    background: url(/new-school-project/assets/images/caelidlands.jpg) center center/cover no-repeat;
+    background: url('../images/caelidlands.jpg') center center/cover no-repeat;
     background-attachment: fixed;
     color: rgb(255, 255, 255); 
     padding: 0%;
@@ -393,7 +393,7 @@ audio {
 }
 
 .intro-container {
-    background: url(/new-school-project/assets/images/caelidlands.jpg) center center/cover no-repeat;
+    background: url('../images/caelidlands.jpg') center center/cover no-repeat;
     position: relative;
     z-index: 1;
     display: flex;
