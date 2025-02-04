@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tale Of Greenshade D&D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="./assets/styles/index.css" rel="stylesheet">
+    <script src="./scripts.js" ></script>
+</head>
+
+<body onload="init()" style="opacity: 0;">
+
+    <nav class="navbar">
+       <img src="assets/images/web.logo.webp" alt="logo" class="logo">
+        <a href="#section1">The lore</a>
+        <a href="#section2">Greenshade</a>
+        <a href="#section3">Choose A weapon</a>
+        <a href="#section4">Choose A player</a>
+        <a href="#section5">The Tale of Chaos and Vines</a>
+        <a href="#section6">Choose your path</a>
+    </nav>
+
+    <section id="#section1"></section>
+    <section id="#section2"></section>
+    <section id="#section3"></section>
+    <section id="#section4"></section>
+    <section id="#section5"></section>
+    <section id="#section6"></section>
+
+  <div id="section1">
+
+        <h1>the tale of Greenshade</h1>
+        <h2>It's All About The Garnished One!</h2>
+    
+
+    <div class="button-container">
+        <button onclick="toggleText()">I want to be a lord</button>
+    </div>
+
+<div id="text">
+    <h2>You're Not Ready Yet ! garnished</h2>
+</div>
+
+  </div>
+
+  <div class="audio-player">
+    <audio controls loop src="assets/audios/darkfantasy.mp3"></audio>
+  </div>
+
+
+
+<h2>The Elden Leaf: A Tale of Salad in the Lands Between</h2>
+<p><b>In the shadowed corners of the Lands Between, where the Erdleaf sprouts and ancient castles crumble into dust, there existed a once-vibrant kingdom known as Greenshade.<br>It's people worshipped the Great Garnish, a divine relic said to be the source of all vitality and flavor in the world.<br> The Great Garnish, an eternal, shimmering lettuce leaf, was said to be plucked from the hands of the Salad Elden, a god of taste and balance.<br>
+    But as with all things in the Lands Between, peace was not eternal.<br> The Fracture of Dressing, a cataclysmic event caused by the Great Garnish's corruption, split Greenshade into warring factions, each claiming their own right to wield the power of the Great Salad Bowl.<br>Chaos ensued. The balance of crunch, zest, and dressing was forever lost.</b></p>
+   
+    <img class="img-1" src="assets/images/salad kingdom.webp" alt="salad kingdom"> 
+    
+<p><b>The Great Salad Kingdom</b></p>
+
+<h2>The Garnished Leafbearer</h2>
+<p><b>You are Garnished, a lowly wanderer, exiled from the glory of Greenshade.<br> You awaken in the Field of Wilt, surrounded by rotting lettuce and shattered croutons.<br> A faint glow pierces through the mists-a light guiding you toward the forgotten Shrine of the Elden Dressing, where the secrets of the Great Garnish may yet linger.<br>
+    A voice calls to you. It is Chef Oloric, a spectral figure draped in aprons of tarnished gold.<br> His eyes are weary, but his voice is steady.
+    “Tarnished Leafbearer, long have you slumbered. The balance of salad has been lost.<br> The Thousand Bowls of Greenshade are drenched in chaos—some overdressed, others dry and barren. You must journey to restore the Great Garnish and reclaim the title of Leaflord.”<br>
+    Oloric fades, leaving behind only his rusted ladle-a humble weapon, yet one destined for greatness.</b></p>
+
+</div>
+
+    
+<div id="section2">
+
+<h1>The Factions of Greenshade</h1>
+    <h2>The Lands Between are now ruled by fractured salad factions, each warped by their own interpretations of the Great Garnish's teachings:</h2>
+
+    <h2 class="custom-header-2">Crouton Order:</h2>
+<p><b>Knights encased in armor made of hardened bread, they value crunch above all else...<br> They view softness as weakness and have banned all leafy greens from their lands.</b></p>
+
+<h2 class="custom-header-2">Dressing Coven:</h2>
+<p><b>Sorcerers obsessed with perfect emulsions, they flood their territory with rivers of ranch and vinaigrette.<br> Their power is overwhelming but corrupt, drowning all life beneath waves of overpowering flavor.</b></p>
+
+<h2 class="custom-header-2">Bitter Greens:</h2>
+<p><b>Rebels who worship the purity of raw leaves-arugula,<br> kale, and endive. They scorn the indulgence of dressings or toppings, considering them heresy.</b></p>
+
+<h2 class="custom-header-2">The Fruitmongers:</h2>
+<p><b>Mad prophets who toss forbidden fruits-mangoes, strawberries, and oranges-into their bowls, defying tradition.<br> Their lands are sweet but perilous, for their twisted creations are both alluring and deadly.</b></p>
+
+<h1 class="custom-header-1">where you going next?</h1>
+<h2>choose from the menu :</h2>
+<h3>And beware.. Because Two Of this options will end your journey !</h3>
+
+<div id="popup-menu">
+    <ul>
+        <li onclick="blurAndShutdown('crouton')">Crouton Order</li>
+        <li onclick="blurAndShutdown('dressing')">Dressing Coven</li>
+        <li onclick="showMessage(' wow i Thought you would not make it.. You Made The right choice you may continue your journey!')">Bitter Greens</li>
+        <li onclick="showMessage('well that was surprising.. you made the right choice you may continue your journey!')">Fruitmongers</li>
+    </ul>
+</div>
+
+<div id="popup-text-container">
+    <p id="popup-text"></p>
+    <button onclick="returnToMenu()">Back To The Journey</button>
+</div>
+
+<br><br>
+<h2>So.. your journey has ended ? </h2>
+<h3>I Guess You Will Have The Dignity to put down the gear and walk away</h3>
+<h2>but... if you chose the right path you may continue your journey !</h2>
+
+</div>
+
+<div id="section3">
+
+<h1>choose a weapon</h1>
+    <div class="slideshow-container">
+       
+        <div class="mySlides">
+            <img class="custom-img" src="assets/images/crystal sword.jpg" alt="The lettuce crystal">
+        </div>
+        <div class="mySlides">
+            <img class="custom-img" src="assets/images/lettuce Katana.jpg" alt="The Goofy katana">
+        </div>
+      
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+<b><h3 class="custom-header-3">The lettuce crystal : The Shard of Growth</h3></b>
+<b><p class="custom-p">The Lettuce Crystal was a mystical gem forged from the tears of Lumera, Goddess of Harvest, to bring life to barren lands.<br>It could grow crops instantly, heal the sick, purify poisoned environments, and empower its wielder with nature's strength.<br> Protected by the Keepers of Green, it ensured balance in the kingdom of Verdalis.<br>
+    When the crystal vanished, famine and sickness spread.<br> A young herbalist, Elenara, discovered it hidden in the Verdant Maze, guarded by Lumera's spirit.<br> Proving her worth through courage and love for the land, Elenara restored the crystal, bringing hope and renewal to Verdalis.</p></b>
+
+    <b><h3 class="custom-header-3">The Goofy Katana : blade of cheos</h3></b>
+<b><p class="custom-p">Forged in a moment of cosmic absurdity, the Goofy Katana is a weapon unlike any other.<br> Created by a trickster deity who loved to confuse both allies and enemies, this bizarre blade combines chaotic unpredictability with undeniable power.<br> It appears comically oversized, with a shimmering, cartoonish glow and a handle wrapped in vibrant rainbow threads.<br>
+    Though it looks like a joke, the Goofy Katana is no laughing matter.<br> Its wild abilities make it both a dangerous tool and a source of bewildering hilarity.</p></b>
+
+    <h1 class="custom-header-1">well.. I hope you made the right choice</h1>
+    <h2 class="custom-header-2">the right choice for you...</h2>
+
+</div>
+
+<h1>choose a player</h1>
+
+<div id="section4">
+
+<div class="card1">
+    <img class="imgGg" src="assets/images/goofygoose warrior.webp" alt="Avtar">
+</div>
+<div class="container">
+  <h4 class="h4C"><b>GoofyGoose</b></h4>
+  <p class="avatar"><b>Wielder of Storms and Shadows</b></p>
+  <p class="avatarSA"><b>Special Power: "Crimson Quackstrike" Summons a storm of shadow lightning,<br> dealing massive area damage and stunning enemies while buffing self with increased attack speed for 10 seconds.</b></p>
+  <h4 class="h4C"><b>Stats</b></h4>
+  <h3><li>Strength: 95</li>
+  <li>Agility: 80</li>
+  <li>Intelligence: 70</li>
+  <li>Defense: 85</li>
+  <li>Charisma: 50</li></h3>
+
+</div>
+
+<div class="card2">
+    <img class="imgLt" src="assets/images/lettuce warrior.webp" alt="Avtar">
+</div>
+<div class="container">
+  <h4 class="h4C"><b>LtLettuce</b></h4>
+  <p class="avatar"><b>Herald of the Plague Vines</b></p>
+  <p class="avatarSA"><b>Special Power: "Wrath of the Wretched Garden" Summons a swarm of toxic vines that entangle and poison enemies,<br> draining their health while empowering the wielder with regeneration and boosted magic damage.</b></p>
+  <h4 class="h4C"><b>Stats</b></h4>
+  <h3>
+    <li>Strength: 85</li>
+    <li>Agility: 75</li>
+    <li>Intelligence: 90</li>
+    <li>Defense: 80</li>
+    <li>Charisma: 60</li>
+  </h3>
+</div>
+
+</div>
+
+<br>
+
+<div id="section5">
+
+    <h1>The Tale of Chaos and Vines</h1>
+    <br><br>
+    <p><b>The crimson sky over the Wretched Garden crackled with energy as GoofyGoose and LtLettuce stood side by side,<br>their gazes fixed on the towering, grotesque figure of the Vile Gardener.<br> The corrupted overlord laughed menacingly, its thorned scythe gleaming with toxic venom.</b></p>
+    <h2 class="custom-header-2">"You two think you can stop me? This land will rot, and chaos will bow to my vines!"</h2>
+    <p><b>the Gardener sneered.</b></p>
+    <p><b>
+        GoofyGoose, gripping the Goofy Katana, tilted his head.<br></b></p> <h2 class="custom-header-2">"Bow? Buddy, chaos doesn't bow. It quacks!"</h2>
+         <p><b>With a swing of his blade, a storm of shadow lightning erupted,<br> striking the Gardener and forcing it back.<br>
+        LtLettuce stepped forward, summoning a swarm of toxic vines.<br></b></p> 
+        <h2 class="custom-header-2"> "And my vines don't rot!! they reclaim!"</h2>
+        <p><b>The ground erupted as the vines wrapped around the Gardener, holding it in place.<br>
+        The Gardener struggled, slashing at the vines.</b></p>
+        <h2 class="custom-header-2"> "Fools! My power is endless!"</h2>
+        <p><b> before it could escape,<br> the Goofy Katana glowed brightly in GoofyGoose's hands.<br>
+        With a triumphant honk, GoofyGoose unleashed a massive Crimson Quackstrike.<br>The sky darkened as shadow lightning and comical energy combined, striking the Gardener and sending it reeling.<br></b></p>
+        <h2 class="custom-header-2">"Now!"</h2>
+        <p><b>shouted GoofyGoose.<br>
+        LtLettuce raised his blade and roared,</b></p>
+        <h2 class="custom-header-2">"Wrath of the Wretched Garden!"</h2>
+        <p><b>Toxic vines surged from the earth, enveloping the Gardener completely.<br>Its roars faded as it was consumed by the purifying energy, dissolving into nothingness.<br>
+        The forest fell silent, and the sky brightened.<br> Flowers bloomed where corruption had once spread.<br>
+        The two heroes stood triumphant.</b></p><h2 class="custom-header-2"> "Not bad, for a goose,"</h2> <p><b>said with a smirk.
+        </b></p><h2 class="custom-header-2">"Not bad, for a salad,"</h2><p><b> GoofyGoose quipped.<br> The two shared a laugh, their chaotic teamwork proving that even the oddest duo could save the world.<br>
+        And with that, they waddled off into the horizon,<br>
+        <h2>ready for their next adventure.</h2>
+    </b></p>
+
+</div>
+
+<div id="section6">
+
+    <h1>Choose your path</h1>
+    <h2>Choose wisely, for the path you take will shape your destiny.</h2>
+
+    <ul class="destination-list">
+        <li class="destination-item">
+            <a href="./BitterGreens.html" class="destination-link">
+                <img src="/new-school-project/assets/images/BitterGreens.webp" alt="BitterGreens" class="destination-image">
+                <div class="destination-title">Bitter Greens</div>
+            </a>
+        </li>
+        <li class="destination-item">
+            <a href="./CroutonOrder.html" class="destination-link">
+                <img src="/new-school-project/assets/images/CroutonOrder.webp" alt="CroutonOrder" class="destination-image">
+                <div class="destination-title">Crouton Order</div>
+            </a>
+        </li>
+        <li class="destination-item">
+            <a href="./DressingCoven.html" class="destination-link">
+                <img src="/new-school-project/assets/images/DressingCoven.webp" alt="DressingCoven" class="destination-image">
+                <div class="destination-title">Dressing Coven</div>
+            </a>
+        </li>
+        <li class="destination-item">
+            <a href="./FruitMongers.html" class="destination-link">
+                <img src="/new-school-project/assets/images/FruitMongers.webp" alt="FruitMongers" class="destination-image">
+                <div class="destination-title">Fruitmongers</div>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<br><br><br><br><br>
+
+<div class="footer">
+    <p>© 2025 The Tale Of Greenshade D&D. All rights reserved.</p>
+    <p>daniel edri © jordan siegel</p>
+
+    <a href="https://discord.gg/KAzDDnWg"><img src="/new-school-project/assets/images/discord logo.png" alt="discord" class="footer-logo"></a>
+    <a href="https://www.twitch.tv/goofygooseee/about"><img src="/new-school-project/assets/images/twitch logo.png" alt="Twitch" class="footer-logo"></a>
+    <a href="./about.html"><img src="/new-school-project/assets/images/aboutus logo.jpg" alt="About Us" class="footer-logo"></a>
+    <a href="./store.html"><img src="/new-school-project/assets/images/store logo.jpg" alt="store" class="footer-logo"></a>
+    <a href="./login-register.html"><img src="/new-school-project/assets/images/login icon.png" alt="login-register" class="footer-logo"></a>
+    </div>    
+</body>
+ </html>
