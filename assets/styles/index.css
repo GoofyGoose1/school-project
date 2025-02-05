@@ -1,6 +1,16 @@
 @import url(./vars.css);
 @import url(./layout.css);
 
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
 body {
     background-color: #f4f4f4;
     margin: 0;
@@ -10,37 +20,6 @@ body {
     color: rgb(255, 255, 255); 
     padding: 0%;
 }
-
-.button-container {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #7e7c7c;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor:cell;
-}
-
-button:hover {
-    background-color: #bd0d0d;
-}
-
-#text {
-    display: none; 
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20px;
-    color: #333;
-    text-align: center;
-}
-
 
 h1 {
     font-family: 'Cinzel', serif;
@@ -54,6 +33,22 @@ h2 {
     font-family:'Cinzel', serif;
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.h2-hidden{ 
+    text-align: center;
+    border-radius: 15px;
+    border: #000000;
+}
+
+.hidden-text {
+    visibility: hidden;
+    color: red;
+    font-size: xx-large;
+}
+
+h2:hover + p {
+    visibility: visible;
 }
 
 h3 {
@@ -73,12 +68,6 @@ p {
     text-align: left;
     margin-left: 5%;
     font-family: 'Cinzel', serif;
-}
-
-.button-container {
-margin-left: -20px;
-margin-top: 2px;
-
 }
 
 .img-1 {
@@ -392,76 +381,6 @@ audio {
     width: 22px;
 }
 
-.intro-container {
-    background: url('../images/caelidlands.jpg') center center/cover no-repeat;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background-color: #941010; 
-    transition: opacity 1s ease-out;
-}
-
-.intro-container.fade-out {
-    opacity: 0;
-}
-
-.intro-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.intro-container p {
-    font-size: xx-large;
-    margin-bottom: 50px;
-    color: rgb(0, 0, 0);
-    font-family: 'Cinzel', serif;
-    border-radius: 5px;
-    box-shadow:  10px 10px 15px;
-    padding: 5px;
-    background-color:#93292b;
-}
-
-.intro-container button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 1s ease-out; 
-}
-
-.intro-container button:hover {
-    background-color: #b86507c2;
-    transition: 1s;
-}
-
-.intro-container button.clicked {
-    transform: scale(0); 
-}
-
-.h1-intro {
-    font-family:'Cinzel', serif;
-    text-decoration: none;
-    color: rgb(187, 52, 52);
-}
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
 #bg-video {
     position: absolute;
     top: 50%;
@@ -475,12 +394,6 @@ audio {
 .fade-in {
     opacity: 0;
     animation: fadeInAnimation 3s forwards;
-}
-
-@keyframes fadeInAnimation {
-    to {
-        opacity: 1;
-    }
 }
 
 .destination-list {
@@ -818,12 +731,6 @@ audio {
     margin: 20px;
     position: relative;
     overflow: hidden;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
 }
 
 .body-contact {

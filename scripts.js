@@ -6,16 +6,6 @@ function init() {
     document.body.style.opacity ='0';
 }
 
-
-function toggleText() {
-    const textDiv = document.getElementById('text');
-    if (textDiv.style.display === "none" || textDiv.style.display === "") {
-        textDiv.style.display = "block"; 
-    } else {
-        textDiv.style.display = "none"; 
-    }
-}
-
 function showText(text) {
       
     const popupContainer = document.getElementById('popup-text-container');
