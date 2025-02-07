@@ -18,6 +18,7 @@
   }
 
 html {
+    scroll-padding-top: 80px;
     scroll-behavior: smooth;
 }
 body {
@@ -192,7 +193,6 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
   .slide {
     width: 50%;
     height: 100%;
-
   }
 
   .slide img {
@@ -217,7 +217,7 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .imgGg {
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -228,7 +228,7 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .imgLt {
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -246,7 +246,7 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
 .avatar {
   font-family:'Cinzel', serif;
   font-size: medium;
-  color: rgb(255, 255, 255); 
+  color: rgb(129, 34, 34); 
   text-align: center;
 }
 
@@ -254,16 +254,19 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     font-family:'Cinzel', serif;
     color: black;
     font-size: medium;
-    line-height: 25px;
+    line-height: 50px;
+}
+
+li {
+    text-align: justify;
+    line-height: 30px;
 }
 
 .card1:hover {
     transition: 1s;
     background-color: rgba(253, 253, 253, 0.014);
     border-radius: 60px 60px;
-    margin-top: 100px;
-    
- 
+    margin-top: 100px; 
 }
 
 .card2:hover {
@@ -278,6 +281,14 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     align-items: center;
 }
 
+#section4 {
+  scroll-margin-top: 80px;
+}
+
+.cards {
+    display: flex;
+}
+
 .card2 {
   box-shadow: none;
   transition: 1.5s;
@@ -289,8 +300,10 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     color: #580404;
 }
 
-#section4 {
-    display: flex;
+.h4CS {
+    font-family: 'Cinzel', serif;
+    text-align: justify;
+    color: #580404;
 }
 
 .navbar {
