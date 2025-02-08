@@ -17,6 +17,49 @@
     100% { transform: translateX(0); }
   }
 
+  .autoRotate {
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @keyframes autoRotateAnimation {
+    from{
+         transform: rotate(0deg);
+    }to{
+         transform: rotate(360deg);
+    }
+
+  }
+
+  .autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+  }
+  @keyframes autoShowAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+  }
+  
+  .autoBlur {
+    animation: autoBlurAnimation both;
+    animation-timeline: view(40px);
+  }
+  @keyframes autoBlurAnimation {
+    from{
+        filter: blur(40px);
+    }to{
+        filter: blur(0);
+    }
+  }
+
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
@@ -81,26 +124,19 @@ p {
     font-family: 'Cinzel', serif;
 }
 
-.img-1 {
-width: 20%;
-position:relative;
-margin-left: auto;
-margin-right: auto;
-display: flex;
-border-radius: 30%;
-}
-
-
 .custom-header-2 {
 color: rgb(199, 54, 54);
+animation: autoShowAnimation both;
+animation-timeline: view(70% 5%);
 }
 
 .custom-header-1 {
 background: none;
 text-align: center;
 color: black;
+animation: autoShowAnimation both;
+animation-timeline: view(70% 5%);
 }
-
 
 #popup-menu {
 position: relative;
@@ -182,6 +218,8 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     position: relative;
     border-radius: 30px;
     box-shadow: 0 0 20px #ff6ec4, 0 0 40px #7873f5, 0 0 60px #ff6ec4;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
 }
 
   .slideshow {
@@ -249,6 +287,8 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
   font-size: medium;
   color: rgb(129, 34, 34); 
   text-align: center;
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
 }
 
 .avatarSA {
@@ -256,6 +296,8 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     color: black;
     font-size: medium;
     line-height: 50px;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
 }
 
 li {
@@ -294,15 +336,20 @@ li {
 }
 
 .h4C { 
+    font-size: x-large;
     font-family: 'Cinzel', serif;
     text-align: center;
     color: #580404;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
 }
 
 .h4CS {
     font-family: 'Cinzel', serif;
     text-align: justify;
     color: #580404;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
 }
 
 .navbar {
@@ -402,6 +449,8 @@ audio {
     align-items: center;
     display: flex;
     justify-content: center;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
 }
 .destination-item {
     margin-bottom: 20px;
@@ -442,7 +491,6 @@ audio {
     }
 
 .home-button {
-    border-radius: 15px;
     width: 35px;
     margin: -10px;
 }
@@ -753,4 +801,15 @@ details[open] .dropdown-content {
 details {
     display: inline-block;
     position: relative;
+}
+
+.footer {
+    background: linear-gradient(263deg, #97430c, #000000);
+    padding: 70px;
+    text-align: center;
+    font-family:'Cinzel', serif;
+}
+
+.footer-h2 {
+    color: white;
 }
