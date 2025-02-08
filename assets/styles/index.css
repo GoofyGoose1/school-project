@@ -188,7 +188,7 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
     display: flex;
     width: 200%;
     height: 100%;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
   }
 
   .slide {
