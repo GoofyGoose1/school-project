@@ -5,30 +5,11 @@ function init() {
     document.body.style.opacity ='0';
 }
 
-function showText(text) {
-      
-    const popupContainer = document.getElementById('popup-text-container');
-    const popupText = document.getElementById('popup-text');
-    
-    popupText.textContent = text;
-    popupContainer.style.display = 'block';
-
-  
-    setTimeout(() => {
-        popupContainer.style.display = 'none';
-    }, 3000);
-}
-
 function choosePath(path) {
     const storyContainer = document.getElementById('story-container');
     const storyText = document.getElementById('story-text');
 
 
-    if (path === 'crouton') {
-        storyText.textContent = "You have chosen the Crouton Order. The knights of hardened bread don't welcome you and prepare a feast. Your journy has ended !";
-    } else if (path === 'dressing') {
-        storyText.textContent = "You have entered the Dressing Coven. Rivers of ranch and vinaigrette surround you, and the emulsion sorcerers see you and prepare a feast. Your Journy has ended !";
-    }
      if (path === 'Bitter Greens stand strong!') {
         storyText.textContent = "you chose the right path you may continue your journy !"
     } else if (path === 'Fruitmongers defy traditions!')
@@ -52,7 +33,6 @@ function blurAndShutdown(message) {
     setTimeout(() => {
         document.body.innerHTML = '<h1>Journey Has Ended</h1>';
         document.body.style.textAlign = 'center';
-        document.body.style.paddingTop = '20%';
         document.body.style.fontSize = '2em';
         document.body.style.color = 'red';
     }, 600); 
