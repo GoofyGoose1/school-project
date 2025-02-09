@@ -65,6 +65,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    cursor: url(/assets/images/icons8-minecraft-sword-48.png) , auto;
     background-color: #f4f4f4;
     margin: 0;
     min-height: 100vh;
@@ -173,7 +174,7 @@ margin: 0;
 
 #popup-menu li {
 margin: 10px 0;
-cursor: pointer;
+cursor: url(/assets/images/icons8-minecraft-sword-48.png);
 padding: 8px;
 background-color: #2b0909;
 border-radius: 5px;
@@ -472,7 +473,6 @@ audio {
     display: inline-flex;
     margin: 60px;
     width: 250px;
-
 }
 .destination-item:hover {
     transform: scale(1.2) rotate(5deg);
@@ -801,7 +801,6 @@ audio {
 
 
 summary {
-    cursor: pointer;
     list-style: none;
     color: white;
 }
@@ -855,6 +854,7 @@ details {
     margin-right: auto;
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
+    cursor: cell;
   }
 
   .map-image {
@@ -867,7 +867,7 @@ details {
     height: 16px;
     background-color: red;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: cell;
     transition: all 0.3s ease;
     font-family: 'Cinzel', serif;
 }
