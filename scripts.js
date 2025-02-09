@@ -9,16 +9,9 @@ function choosePath(path) {
     const storyContainer = document.getElementById('story-container');
     const storyText = document.getElementById('story-text');
 
-
-     if (path === 'Bitter Greens stand strong!') {
-        storyText.textContent = "you chose the right path you may continue your journy !"
-    } else if (path === 'Fruitmongers defy traditions!')
-        storyText.textContent = "you chose the right path, you may continue your journy !"
-
     document.getElementById('popup-menu').style.display = 'none';
     storyContainer.style.display = 'block';
 }
-
 
 function showMessage(message) {
     const popupTextContainer = document.getElementById('popup-text-container');
@@ -28,12 +21,11 @@ function showMessage(message) {
 }
 
 function blurAndShutdown(message) {
-    showMessage(message);
     document.body.classList.add('blur');
     setTimeout(() => {
         document.body.innerHTML = '<h1>Journey Has Ended</h1>';
         document.body.style.textAlign = 'center';
-        document.body.style.fontSize = '2em';
+        document.body.style.fontSize = '3em';
         document.body.style.color = 'red';
     }, 600); 
 
@@ -45,7 +37,7 @@ function blurAndShutdown(message) {
     popupTextContainer.style.display = 'none';
 }
 
-// login & register - memorize it!!! //
+// login & register //
 document.getElementById('toggle-link').addEventListener('click', function() {
     const formTitle = document.getElementById('form-title');
     const submitButton = document.querySelector('button[type="submit"]');
@@ -59,7 +51,7 @@ document.getElementById('toggle-link').addEventListener('click', function() {
         this.textContent = 'Already have an account? Login';
     }
 });
-// login & register - memorize it!!! //
+// login & register  //
 document.getElementById('auth-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const formTitle = document.getElementById('form-title').textContent;
