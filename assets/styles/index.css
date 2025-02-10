@@ -1,5 +1,6 @@
 @import url(./vars.css);
 @import url(./layout.css);
+@import url(./location.css);
 
 @keyframes fadeInAnimation {
     to {
