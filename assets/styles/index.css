@@ -149,7 +149,6 @@ animation-timeline: view(70% 5%);
     animation-timeline: view(90% 5%);
     }
     
-
 #popup-menu {
 position: relative;
 margin-left: auto;
@@ -267,101 +266,10 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
 
 }
 
-.imgGg {
-    margin-top: 100px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    box-shadow: 1px 1px 30px 12px;
-    border-radius: 30%;
-    
-}
-
-.imgLt {
-    margin-top: 100px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    box-shadow: 1px 1px 30px 12px; 
-    border-radius: 30%;
-    
-}
-
-.card1 {
-    box-shadow: none;
-    transition: 1.5s;
-}
-
-.avatar {
-  font-family:'Cinzel', serif;
-  font-size: medium;
-  color: rgb(129, 34, 34); 
-  text-align: center;
-  animation: autoShowAnimation both;
-  animation-timeline: view(70% 5%);
-}
-
-.avatarSA {
-    font-family:'Cinzel', serif;
-    color: black;
-    font-size: medium;
-    line-height: 50px;
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
-}
-
-li {
-    text-align: justify;
-    line-height: 30px;
-}
-
-.card1:hover {
-    transition: 1s;
-    border-radius: 60px 60px;
-    margin-top: 100px; 
-}
-
-.card2:hover {
-    transition: 1s;
-    margin-top: 100px;
-    border-radius: 60px 60px;
-}
 
 .container {
     padding: 2px 16px;
     align-items: center;
-}
-
-#section4 {
-  scroll-margin-top: 80px;
-}
-
-.cards {
-    display: flex;
-}
-
-.card2 {
-  box-shadow: none;
-  transition: 1.5s;
-}
-
-.h4C { 
-    font-size: x-large;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    color: #580404;
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
-}
-
-.h4CS {
-    font-family: 'Cinzel', serif;
-    text-align: justify;
-    color: #580404;
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
 }
 
 .navbar {
@@ -539,16 +447,27 @@ audio {
     object-fit: cover;
 }
 
+.cards {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 200px;
+}
+
 .flip-card {
-    width:  400px;
-    height: 400px;
+    position: relative;
+    width:  300px;
+    height: 300px;
     perspective: 1000px;
-    padding: 50px;
+    padding: 40px;
     overflow: visible;
 }
 
 .flip-card-inner {
-    position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     width: 100%;
@@ -575,16 +494,22 @@ audio {
 }
 
 .img-flip {
-    width: 400px;
+    position: relative;
+    width: 300px;
     height: 400px;
     object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 6px 7px 11px 11px rgb(0 0 0 / 40%);
+    border-radius: 20px;
+    box-shadow: 1px 1px 16px 6px rgb(255 255 255 / 33%);
 }
 
 .cardsflip {
+    position: relative;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.cardsflip1 {
     display: flex;
-    gap: 150px;
     align-items: center;
     justify-content: center;
 }
@@ -646,28 +571,6 @@ audio {
     margin-left: auto;
     margin-right: auto;
     align-items: baseline;
-}
-
-.card {
-    background: rgba(62, 32, 95, 0.4);
-    border-radius: 15px;
-    padding: 1.5rem;
-    border: 1px solid #3e205f;
-    box-shadow: 1px 9px 18px 2px rgb(0 0 0);
-    backdrop-filter: blur(5px);
-    position: relative;
-    overflow: hidden;
-}
-
-.card-header {
-    margin-bottom: 20px;
-    color: #ffffff;
-    font-size: x-large;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 10px;
 }
 
 .stats-grid {
