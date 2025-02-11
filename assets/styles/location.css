@@ -14,4 +14,10 @@
     display: block;
     object-fit: cover;
 }
+ 
 
+.footprint-1 {margin-left: 50%; margin-top: 5%; width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
+.footprint-2 {margin-left: 40%; margin-top: 8%; width: 100px; rotate: 130deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
+.footprint-3 {margin-left: 50%; margin-top: 11%;width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
+.footprint-4 {margin-left: 40%; margin-top: 14%; width: 100px; rotate: 130deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
+.footprint-5 {margin-left: 50%; margin-top: 17%; width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
