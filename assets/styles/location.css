@@ -21,3 +21,62 @@
 .footprint-3 {margin-left: 50%; margin-top: 11%;width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
 .footprint-4 {margin-left: 40%; margin-top: 14%; width: 100px; rotate: 130deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
 .footprint-5 {margin-left: 50%; margin-top: 17%; width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
+/*dressing coven*/
+.dressing-coven-img {
+    height: 500px;
+    width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 12px rgb(0 0 0 / 82%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+}
+.dressing-coven-path{
+    margin-left: 40%;
+    margin-top: 2%;
+    width: 400px;
+    height: 600px;
+}
+.map-text-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: black;
+    font-family: fantasy;
+
+}
+
+.dressing-coven-map {
+    height: 600px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 12px rgb(0 0 0 / 82%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+}
+.dressing-coven-item{
+    margin-right: -70%;
+    margin-top: -25%;
+}
+.dressing-map-pin {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    transform: rotate(45deg);
+    cursor: crosshair;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', serif;
+    left: 52%;
+    top: 172%;
+}
+
+.dressing-map-pin:hover {
+    transform: rotate(35deg) scale(1.25);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
