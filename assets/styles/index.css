@@ -16,64 +16,66 @@
     0%, 45% { transform: translateX(0); }
     50%, 95% { transform: translateX(-50%); }
     100% { transform: translateX(0); }
-  }
+}
 
-  .autoRotate {
+.autoRotate {
     animation: autoRotateAnimation;
     animation-timeline: view();
     width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  @keyframes autoRotateAnimation {
-    from{
-         transform: rotate(0deg);
-    }to{
-         transform: rotate(360deg);
+}
+@keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
     }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-  }
-
-  .autoShow {
+.autoShow {
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
-  }
-  @keyframes autoShowAnimation {
-    from{
+}
+@keyframes autoShowAnimation {
+    from {
         opacity: 0;
         transform: translateY(200px) scale(0.3);
-    }to{
+    }
+    to {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-  }
-  
-  .autoBlur {
+}
+
+.autoBlur {
     animation: autoBlurAnimation both;
     animation-timeline: view(40px);
-  }
-  @keyframes autoBlurAnimation {
-    from{
+}
+@keyframes autoBlurAnimation {
+    from {
         filter: blur(40px);
-    }to{
+    }
+    to {
         filter: blur(0);
     }
-  }
+}
 
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
 }
 body {
-    cursor: url(/assets/images/icons8-minecraft-sword-48.png) , auto;
+    cursor: url(/assets/images/icons8-minecraft-sword-48.png), auto;
     background-color: #f4f4f4;
     margin: 0;
     min-height: 100vh;
     background: url('../images/caelidlands.jpg') center center/cover no-repeat;
     background-attachment: fixed;
-    color: rgb(255, 255, 255); 
-    padding: 0%;
+    color: rgb(255, 255, 255);
+    padding: 0;
 }
 
 h1 {
@@ -150,15 +152,15 @@ animation-timeline: view(70% 5%);
     }
     
 #popup-menu {
-position: relative;
-margin-left: auto;
-margin-top: auto;
-margin-right: auto;
-width: 500px;
-padding: 10px;
-border-radius: none;
-color: rgb(255, 255, 255);
-font-family: 'Cinzel', serif;
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 10px;
+    border-radius: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel', serif;
 }
 
 body.blur {
@@ -785,3 +787,4 @@ details {
 .pin-2 { left: 43%; top: 52%; }
 .pin-3 { left: 68%; top: 37%; }
 .pin-4 { left: 40%; top: 70%; }
+
