@@ -454,7 +454,7 @@ audio {
     animation-timeline: view(70% 5%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
     padding-top: 0;
     padding-bottom: 200px;
@@ -514,6 +514,16 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-header {
+    font-family: 'Cinzel', serif;
+    margin: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 40px purple, 0 0 80px purple;
+
 }
 
 .form-container {
@@ -587,18 +597,21 @@ audio {
     background: rgba(62, 32, 95, 0.2);
     border-radius: 12px;
     border: 1px solid #4c3f5a;
+    transition: all 0.5s ease;
 }
-
+.stat-item:hover {
+    transform: translate(5px);
+}
 .stat-value {
     font-size: 30px;
     font-weight: bold;
-    color: #c9b5a0;
+    color: #000000;
     margin-bottom: 0.5rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .stat-label {
-    color: #ffffff;
+    color: #000000;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
