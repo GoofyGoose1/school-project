@@ -191,7 +191,7 @@
     cursor: cell;
   }
  
-.pin-dressing {left: 36%; top: 22%;}
+.pin-dressing {left: 26%; top: 22%;}
 
 .map-pin-2 {
     position: absolute;
@@ -214,3 +214,49 @@
     font-size: xx-large ;
 }
 
+.pixel-sword-2 {
+    margin: 200px;
+    width: 500px;
+    animation: spin 3s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+}
+
+/*Fruit mogers*/
+
+.fruitmongers-img {
+    margin: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 15%;
+    box-shadow: 0 5px 8px 10px rgb(0 0 0 / 70%);
+}
+
+.guard-transperent-2 {
+    position: relative;
+    width: 500px;
+    margin-top: 300px;
+    margin-left: 70%;
+    animation: autoBlurAnimation both;
+    animation-timeline: view(90% 5%);
+}
+
+.bubble-text {
+    transition: all 0.5s ease;
+    animation: autoBlurAnimation both;
+    animation-timeline: view(50% 5%);
+    position: relative;
+    top: -550px;
+    left: 50%;
+    background: #000000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 450px;
+    font-family: 'Cinzel', serif; 
+}
