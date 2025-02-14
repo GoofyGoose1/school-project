@@ -245,7 +245,7 @@
     animation-timeline: view(90% 5%);
 }
 
-.bubble-text {
+.bubble-text-2 {
     transition: all 0.5s ease;
     animation: autoBlurAnimation both;
     animation-timeline: view(50% 5%);
