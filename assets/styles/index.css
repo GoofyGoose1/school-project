@@ -51,8 +51,8 @@
 }
 
 .autoBlur {
-    animation: autoBlurAnimation both;
-    animation-timeline: view(40px);
+    animation: autoBlurAnimation both;                             
+    animation-timeline: view(50%);     
 }
 @keyframes autoBlurAnimation {
     from {
@@ -611,10 +611,11 @@ audio {
 }
 
 .stat-label {
-    color: #000000;
+    color: #e9e9e9;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow:  0 0 10px, 0 0 20px;
 }
 
 .achievement-item {
@@ -651,6 +652,13 @@ audio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.h3-spells {
+    font-family: 'Cinzel',serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px, 0 0 20px;
 }
 
 .power-button {

@@ -58,8 +58,10 @@ document.getElementById('auth-form').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (formTitle === 'Register') {
-        // Handle registration logic here
+    if(username.length > 20 || password.length > 8) {
+        alert('Invalid username or password.');
+    }else if (formTitle === 'Register') {
+       
         if (username && password) {
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
@@ -68,8 +70,7 @@ document.getElementById('auth-form').addEventListener('submit', function(event) 
         } else {
             alert('Please fill in all fields.');
         }
-    } else {
-        // Handle login logic here
+    }else{
         const storedUsername = localStorage.getItem('username');
         const storedPassword = localStorage.getItem('password');
 
