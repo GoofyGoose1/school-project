@@ -35,6 +35,10 @@
     display: block;
 }
 
+.guard-container {
+  position: relative;
+}
+
 .guard-transperent {
     position: relative;
     width: 500px;
@@ -139,6 +143,7 @@
         }
     }
     .pixel-sword {
+        position: relative;
         margin: 200px;
         width: 500px;
         animation: spin 3s linear infinite;
@@ -160,9 +165,23 @@
     display: block;
     object-fit: cover;
 }
+
+.map-container-2 {
+    position:relative;
+    width: 1000px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+    cursor: cell;
+  }
+
 .map-image-2 {
     object-fit: cover;
-    width: 900px;
+    width: 1000px;
     justify-content: center;
     height: 500px;
     border-radius: 20px;
@@ -174,24 +193,8 @@
     width: 400px;
     height: 600px;
 }
-
-.map-container-2 {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    gap: 20px;
-    display: flex;
-    top: -50px;
-    position:relative;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
-    cursor: cell;
-  }
- 
-.pin-dressing {left: 26%; top: 22%;}
+  
+.pin-dressing {left: 57%; top: 22%;}
 
 .map-pin-2 {
     position: absolute;
@@ -210,21 +213,25 @@
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
-.text-box {
-    font-size: xx-large ;
-}
-
 .pixel-sword-2 {
+    position: relative;
     margin: 200px;
     width: 500px;
     animation: spin 3s linear infinite;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 100px;
 }
 
 /*Fruit mogers*/
+
+.guard-container-2 {
+    position: relative;
+    display: flex;
+    margin: 25px;
+    animation: autoBlurAnimation both;                             
+    animation-timeline: view(90% 5%);     
+  }
 
 .fruitmongers-img {
     margin: 50px;
@@ -237,21 +244,11 @@
 }
 
 .guard-transperent-2 {
-    position: relative;
-    width: 500px;
-    margin-top: 300px;
-    margin-left: 70%;
-    animation: autoBlurAnimation both;
-    animation-timeline: view(90% 5%);
+   width: 500px;
 }
 
 .bubble-text-2 {
-    transition: all 0.5s ease;
-    animation: autoBlurAnimation both;
-    animation-timeline: view(50% 5%);
-    position: relative;
-    top: -550px;
-    left: 50%;
+    transition: all 0.5s ease;  
     background: #000000;
     border-radius: 20px;
     padding: 20px;
@@ -260,3 +257,38 @@
     width: 450px;
     font-family: 'Cinzel', serif; 
 }
+
+.bubble-text-2:hover {
+    transform: translate(7px);
+    box-shadow: 3px 3px 15px 2px rgb(0 0 0);
+}
+
+#popup-menu-3 {
+    position: relative;
+    width: 500px;
+    padding: 10px;
+    border-radius: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel', serif;
+}
+
+#popup-menu-3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    #popup-menu-3 li {
+    margin: 10px 0;
+    cursor: url(/assets/images/icons8-minecraft-sword-48.png);
+    padding: 20px;
+    background-color: #2b0909;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease;
+    }
+    
+    #popup-menu-3 li:hover {
+    background-color: #000000;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.589);
+    }
