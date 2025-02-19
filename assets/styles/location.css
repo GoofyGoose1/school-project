@@ -15,10 +15,6 @@
     object-fit: cover;
 }
 
-.h2-crouton {
-  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
-}
- 
 
 .footprint-1 {margin-left: 50%; margin-top: 5%; width: 100px; rotate: 160deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
 .footprint-2 {margin-left: 40%; margin-top: 8%; width: 100px; rotate: 130deg; animation: autoBlurAnimation both; animation-timeline: view(50% 5%);}
@@ -37,6 +33,8 @@
 
 .guard-container {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr 1fr));
 }
 
 .guard-transperent {
@@ -227,7 +225,8 @@
 
 .guard-container-2 {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin: 25px;
     animation: autoBlurAnimation both;                             
     animation-timeline: view(90% 5%);     
@@ -292,3 +291,29 @@
     background-color: #000000;
     box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.589);
     }
+
+/*Bitter Greens*/
+
+.woods {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-container {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.map-bitter {
+    cursor: cell;
+    border-radius: 15px;
+    width: 800px;
+    box-shadow: 1px 4px 12px 4px rgb(0 0 0);
+}

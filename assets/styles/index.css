@@ -1,6 +1,7 @@
 @import url(./vars.css);
 @import url(./layout.css);
 @import url(./location.css);
+@import url(./leaves.css);
 
 @keyframes fadeInAnimation {
     to {
@@ -76,6 +77,7 @@ body {
     background-attachment: fixed;
     color: rgb(255, 255, 255);
     padding: 0;
+    z-index: 0;
 }
 
 h1 {
