@@ -81,4 +81,3 @@ document.getElementById('auth-form').addEventListener('submit', function(event) 
         }
     }
 });
-
