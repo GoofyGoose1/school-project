@@ -1,13 +1,25 @@
 
-@media (min-width: 576px) and (max-width: 767px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: center;
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+  
+
+    .overlay-container {
+        max-width: 100%;
     }
 
     .navbar a {
-        width: auto;
+        font-size: 10px;    
     }
+
+   
+
 
     details {
         width: auto;
@@ -18,11 +30,13 @@
     }
 
     h1 {
-        font-size: 32px;
+        text-align: center;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 24px;
+        text-align: center;
+        font-size: 10px;
     }
 
    
@@ -40,6 +54,14 @@
     padding: 100px;
 }
 
+.cards-about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+
    .cardsflip1 {
     padding: 100px;
 }
@@ -50,13 +72,23 @@
 }
 
 @media (min-width: 400px) and (max-width: 575px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: center;
+
+
+    .overlay-container {
+        max-width: 100%;
     }
 
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+ 
     .navbar a {
-        width: auto;
+        font-size: 10px;
+        
     }
 
     details {
@@ -68,11 +100,11 @@
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 10px;
     }
 
     .cards {
@@ -80,7 +112,17 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 100px;
+        max-width: 100%;
         
+    }
+
+    .cards-about {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px;
+
     }
 
     .cardsflip1 {
