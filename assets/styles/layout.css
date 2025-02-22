@@ -177,6 +177,11 @@
    text-align: center;
    }
 
+ 
+
+   .fruitmongers-img{
+    max-width: 100%;
+   }
 
    .slide img {
     width: 50%;
