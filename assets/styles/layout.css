@@ -1,11 +1,16 @@
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 754px) and (max-width: 1024px) {
 
     .slideshow-container {
         max-width: 100%;
     }
 
+ 
     .map-container {
+        max-width: 100%;
+    }
+
+    .crouton-order-img {
         max-width: 100%;
     }
   
@@ -13,13 +18,6 @@
     .overlay-container {
         max-width: 100%;
     }
-
-    .navbar a {
-        font-size: 10px;    
-    }
-
-   
-
 
     details {
         width: auto;
@@ -30,16 +28,21 @@
     }
 
     h1 {
+        max-width: 100%;
+        margin-bottom: 120px;
         text-align: center;
-        font-size: 24px;
+        font-size: large;
     }
 
     h2 {
         text-align: center;
-        font-size: 10px;
+        font-size: 25px;
     }
 
-   
+    .dressing-coven-img {
+        max-width: 100%;
+       }
+
    .destination-list {
     flex-direction: row;
     flex-wrap: wrap;    
@@ -55,12 +58,11 @@
 }
 
 .cards-about {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding: 100px;
 }
-
 
    .cardsflip1 {
     padding: 100px;
@@ -69,11 +71,36 @@
    .slide img {
     width: 50%;
    }
+
+   .map-image-2 {
+    max-width: 100%;;
+   }
+   .crouton-castle{
+    max-width: 100%;
+   }  
+   .guard-container{
+    max-width: 100%;
+   }
+   .map-container-2 {
+    max-width: 100%;
+}
 }
 
-@media (min-width: 400px) and (max-width: 575px) {
+@media (min-width: 300px) and (max-width: 753px) {
+  
 
 
+    .crouton-order-img {
+        max-width: 100%;
+    }
+
+    .map-container-2 {
+        max-width: 100%;
+    }
+  
+    .guard-container{
+        max-width: 100%;
+       }
     .overlay-container {
         max-width: 100%;
     }
@@ -85,17 +112,30 @@
     .map-container {
         max-width: 100%;
     }
- 
+
+    .crouton-castle{
+        max-width: 100%;
+       }   
+
+    .navbar {
+    display: none;
+   }
+
     .navbar a {
-        font-size: 10px;
-        
-    }
+    display: none;
+    
+   }
+
+   .dressing-coven-img {
+    max-width: 100%;
+   }
 
     details {
         width: auto;
     }
 
     .dropdown-content {
+        display: block;
         flex-direction: row;
     }
 
@@ -118,7 +158,7 @@
 
     .cards-about {
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         padding: 100px;
