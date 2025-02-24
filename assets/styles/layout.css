@@ -84,10 +84,25 @@
    .map-container-2 {
     max-width: 100%;
 }
+
+   .autoRotate {
+      max-width: 100%;
+}
+
+   #popup-menu {
+     max-width: 100%;
+}
 }
 
 @media (min-width: 300px) and (max-width: 753px) {
-  
+    
+    #popup-menu {
+        max-width: 100%;
+    }
+
+    .autoRotate {
+        max-width: 100%;
+    }
 
 
     .crouton-order-img {
