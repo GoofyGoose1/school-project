@@ -104,6 +104,9 @@
         max-width: 100%;
     }
 
+    .pixel-sword {
+        max-width: 100%;
+    }
 
     .crouton-order-img {
         max-width: 100%;
@@ -135,7 +138,7 @@
     .navbar {
     display: none;
    }
-
+   
     .navbar a {
     display: none;
     
@@ -191,8 +194,6 @@
    justify-content: center;
    text-align: center;
    }
-
- 
 
    .fruitmongers-img{
     max-width: 100%;

@@ -21,7 +21,7 @@ function showMessage(message) {
 }
 
 function blurAndShutdown(message) {
-    document.body.classList.add('blur');
+    document.body.classList;
     setTimeout(() => {
         document.body.innerHTML = '<h1>Journey Has Ended</h1>';
         document.body.style.textAlign = 'center';

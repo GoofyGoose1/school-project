@@ -304,7 +304,6 @@ box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
 
 .navbar-2 {
     display: flex;
-    position: fixed;
     top: 0;
     width: 100%; 
     justify-content: space-between;
@@ -503,6 +502,7 @@ audio {
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     position: relative;
     padding-top: 0;

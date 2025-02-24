@@ -31,11 +31,6 @@
     display: block;
 }
 
-.guard-container {
-  position: relative;
-
-  
-}
 
 .guard-transperent {
     position: relative;
@@ -227,6 +222,7 @@
 
 .guard-transperent-2 {
    width: 500px;
+   height: 500px;
 }
 
 .bubble-text-2 {
