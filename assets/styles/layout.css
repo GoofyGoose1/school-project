@@ -36,7 +36,7 @@
 
     h2 {
         text-align: center;
-        font-size: 25px;
+        font-size:25px;
     }
 
     .dressing-coven-img {
@@ -95,9 +95,15 @@
 }
 
 @media (min-width: 300px) and (max-width: 753px) {
-    
-    #popup-menu {
+    .dressing-coven-path {
         max-width: 100%;
+    }
+
+    .guard-transperent-2 {
+        max-width: 100%;
+    }
+    .h2-crouton {
+        font-size: large;
     }
 
     .autoRotate {
@@ -109,7 +115,7 @@
     }
 
     .crouton-order-img {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .map-container-2 {
@@ -125,6 +131,7 @@
 
     .slideshow-container {
         max-width: 100%;
+       
     }
 
     .map-container {
@@ -145,7 +152,8 @@
    }
 
    .dressing-coven-img {
-    max-width: 100%;
+    max-width: 80%;
+    object-fit: fill;
    }
 
     details {
@@ -196,11 +204,22 @@
    }
 
    .fruitmongers-img{
-    max-width: 100%;
+    max-width: 80%;
    }
 
-   .slide img {
-    width: 50%;
+   .bubble-text-2 {
+    max-width: fit-content;
    }
-   
+
+   #popup-menu-3 {
+    max-width: fit-content;   
+}
+
+#popup-menu {
+    max-width: fit-content;
+}
+
+
+
+
 }

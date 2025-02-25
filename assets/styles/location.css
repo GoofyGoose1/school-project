@@ -172,12 +172,12 @@
     cursor: cell;
   }
 
-
 .dressing-coven-path{
-    margin-left: 40%;
-    margin-top: 2%;
-    width: 400px;
-    height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 1000px;
+   height: 500px;
 }
   
 .pin-dressing {left: 57%; top: 22%;}
@@ -206,8 +206,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin: 25px;
-    animation: autoBlurAnimation both;                             
-    animation-timeline: view(90% 5%);     
   }
 
 .fruitmongers-img {
@@ -222,27 +220,35 @@
 
 .guard-transperent-2 {
    width: 500px;
-   height: 500px;
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
 }
 
 .bubble-text-2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     transition: all 0.5s ease;  
     background: #000000;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 450px;
     font-family: 'Cinzel', serif; 
 }
 
 .bubble-text-2:hover {
-    transform: translate(7px);
+    transform: translateY(5px);
     box-shadow: 3px 3px 15px 2px rgb(0 0 0);
 }
 
 #popup-menu-3 {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 500px;
     padding: 10px;
     border-radius: none;
@@ -274,7 +280,7 @@
 /*Bitter Greens*/
 
 .woods {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -283,7 +289,7 @@
 
 .overlay-container {
     position: absolute;
-    bottom: 50px; 
+    bottom: -10px; 
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
