@@ -64,7 +64,7 @@
     }
 }
 
-html {
+html { 
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
 }
@@ -426,7 +426,7 @@ audio {
     display: flex;
     justify-content: center;
     animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
+    animation-timeline: view(90% 5%);
 }
 .destination-item {
     margin-bottom: 20px;
@@ -481,6 +481,8 @@ audio {
     margin-left: auto;
     margin-right: auto;
     align-items: baseline;
+   
+
 }
 
 .product {
@@ -491,7 +493,7 @@ audio {
     transition: transform 0.3s;
     border-radius: 10px;
     animation: autoBlurAnimation both;
-    animation-timeline: view(90% 5%);
+    animation-timeline: view(100% 5%);
 
 }
 

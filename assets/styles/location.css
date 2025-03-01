@@ -138,6 +138,7 @@
     .pixel-sword {
         position: relative;
         margin-top: 200px;
+        margin: 150px;
         width: 500px;
         animation: spin 3s linear infinite;
         margin-left: auto;
